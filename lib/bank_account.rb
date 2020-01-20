@@ -19,8 +19,8 @@ class BankAccount
     "Your balance is $#{balance}."
   end
 
-  def valid? 
+  def valid?
     if balance > 0
       true 
-  end 
+  end
 end
