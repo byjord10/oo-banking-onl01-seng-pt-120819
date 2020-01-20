@@ -1,13 +1,13 @@
 class BankAccount
   attr_accessor :balance, :status
   attr_reader :name
-  # @@account = []
+
 
   def initialize(name = "Bob", balance = 1000, status = 'open')
     @name = name
     @balance = balance
     @status = status
-    @@account = []
+
 
   end
 
@@ -15,4 +15,7 @@ class BankAccount
     self.balance += deposit_amount
   end
 
+  def display_balance
+    "Your balance is #{balance}."
+  end
 end
